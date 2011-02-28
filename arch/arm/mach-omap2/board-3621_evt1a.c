@@ -1259,6 +1259,7 @@ static struct usb_mass_storage_platform_data mass_storage_pdata = {
 	.vendor = "B&N     ",
 	.product = "Ebook Disk      ",
 	.release = 0x0100,
+	.nluns = 2
 };
 
 static struct platform_device usb_mass_storage_device = {
