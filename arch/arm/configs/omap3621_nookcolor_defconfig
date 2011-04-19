@@ -335,7 +335,8 @@ CONFIG_ALIGNMENT_TRAP=y
 #
 CONFIG_ZBOOT_ROM_TEXT=0x0
 CONFIG_ZBOOT_ROM_BSS=0x0
-CONFIG_CMDLINE="root=/dev/nfs nfsroot=192.168.0.1:/home/user/buildroot ip=192.168.0.2:192.168.0.1:192.168.0.1:255.255.255.0:tgt:eth0:off rw console=ttyS2,115200n8"
+CONFIG_IGNORE_BOOT_ARGS=y
+CONFIG_CMDLINE="console=ttyS0,115200n8 androidboot.console=ttyS0 initrd rw init=/init videoout=omap24xxvout omap_vout.video1_numbuffers=6 omap_vout.vid1_static_vrfb_alloc=y omapfb.vram=0:5M"
 # CONFIG_XIP_KERNEL is not set
 # CONFIG_KEXEC is not set
 
